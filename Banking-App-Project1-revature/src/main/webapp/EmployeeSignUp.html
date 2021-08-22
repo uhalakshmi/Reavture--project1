@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/Style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/validateEmployeeSignup.js"></script>
+	<title>Login Form</title>
+</head>
+<body>
+	<br/><br/><br/><br/>
+	<div class="container">
+			<form action="EmployeeController" onsubmit="return employeevalidate()" class="form1" method="post">
+
+				<h1> Welcome to Banking App</h1>
+				<h4>Please Enter Details to Create a new Employee account</h4>
+				<input type="text" placeholder="employeename" name="employeename" id="employeename"/>
+				<input type="password" placeholder="password" name="password" id="password"/>
+				<input  type="password" name="confirmpassword" id="confirmpassword" placeholder="Conform Password"/>
+				<input type="number" placeholder="userage" name="userage" id="userage"/>
+				<input type="text" placeholder="Mobile Number" name="mobilenum" id="mobilenum"/>
+				<input type="text" placeholder="Address" name="address" id="address"/>
+
+				<br/><br/>
+				<input type="submit" value="SIGN UP">
+			</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.revature.banking.model.Employee" table = "new_employees">
+     
+      
+      <id name = "employeeId"  type = "int" column = "employeeid">
+         <generator class="increment"/>
+      </id>
+      
+      <property name = "employeeName"  type = "string"/>
+      <property name = "password"  type = "string"/>
+      <property name = "userage"  type="int"/>
+      <property name = "mobileNumber"  type = "string"/>
+      <property name = "address" type = "string"/>
+
+   </class>
+</hibernate-mapping>

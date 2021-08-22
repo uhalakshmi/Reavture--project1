@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/Style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/validateSignUpForm.js"></script>
+	<title>Login Form</title>
+</head>
+<body>
+	<br/><br/><br/><br/>
+	<div class="container">
+			<form action="CustomerController" onsubmit="return validate()" class="form1">
+
+				<h1> Welcome to Banking App</h1>
+				<h4>Please Enter Details to Create a new account</h4>
+				<input type="text" placeholder="customername" name="customername" id="customername"/>
+				<input type="password" placeholder="password" name="password" id="password"/>
+				<input  type="password" name="confirmpassword" id="confirmpassword" placeholder="Conform Password"/>
+				<input type="number" placeholder="userage" name="userage" id="userage"/>
+				<input type="text" placeholder="Mobile Number" name="mobilenum" id="mobilenum"/>
+				<input type="text" placeholder="Address" name="address" id="address"/>
+				<input type="text" placeholder="Amount" name="amount" id="amount"/>
+				
+				<br/><br/>
+				<input type="submit" value="SIGN UP">
+			</form>
+	</div>
+</body>
+</html>

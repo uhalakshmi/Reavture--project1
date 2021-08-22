@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/Style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/loginvalidator.js"></script>
+	<title>Employee Login Form</title>
+</head>
+<body>
+    <header>
+		<br>
+		<h3>EMPLOYEE LOGIN/SIGNUP PAGE</h3>
+		<br>
+	</header>
+	<br/><br/><br/><br/>
+	<div class="container">
+		<div class="form-container log-in-container">
+			<form action="AuthenticateEmployee" onsubmit="return loginEmployeeValidate()" class="form1" method="post">
+				<h1>Employee Login</h1><br/><br/>
+				<input type="text" placeholder="EmployeeId" name="employeeId" id="employeeId"/>
+				<input type="password" placeholder="Password" name="password" id="password" /><br/><br/>
+				<input type="submit" value="LOG IN">
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1 style="color:black ; align-content:center">Hello Employee...!</h1><br/>
+					<h3 style="color:black">To Signup Enter your Details Here</h3>
+					<form action="EmployeeSignUp.html">
+						<input type="submit" value="SIGN UP" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
